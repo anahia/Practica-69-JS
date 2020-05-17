@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 69-->
+
+<head>
+    <title>Practica 69</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <input type="text" id="texto1" name="texto1" size="30">
+    <br>
+    <input type="text" id="texto2" name="texto2" size="30">
+
+    <script>
+        addEventListener('DOMContentLoaded', start, false);
+
+        function start() {
+            document.getElementById('texto1').addEventListener('focus', tf1, false);
+            document.getElementById('texto2').addEventListener('focus', tf2, false);
+            document.getElementById('texto1').addEventListener('blur', pf1, false);
+            document.getElementById('texto2').addEventListener('blur', pf2, false);
+        }
+
+        function tf1() {
+            document.getElementById('texto1').style.color = 'blue';
+        }
+
+        function tf2() {
+            document.getElementById('texto2').style.color = 'cyan';
+        }
+
+        function pf1() {
+            document.getElementById('texto1').style.color = 'aqua';
+        }
+
+        function pf2() {
+            document.getElementById('texto2').style.color = '#99ffcc';
+        }
+    </script>
+
+</body>
+
+</html>
